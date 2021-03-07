@@ -1,0 +1,37 @@
+
+    body {background-color: #4269CB; color: white; line-height:30px ; font-family: Verdana, Arial, sans-serif;}
+    label {font-size:12pt;}
+    h1 {font-size:20pt; font-weight: 100; text-align: left;}
+    h2 {font-size:15pt; font-weight: 100;}
+    .btn-group {padding-top: 20px;}
+    button {font-size:12pt; font-family: Verdana, Arial, sans-serif;}
+    .btn { border: 2px solid white; background-color: #4269CB; color: white; padding: 14px 28px; cursor: pointer; border-radius: 12px;}
+    .btn:hover { color: #4269CB; background-color: white; }
+    .container { border: 2px solid white; border-radius: 5px; padding: 20px; }
+    input[type=text], select, input[type=date] { width: 10% ; padding: 6px; border: 1px solid black; border-radius: 4px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px ; font-family: Verdana; }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #4269CB;
+    }
+    li { float:left; }
+
+    a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: white;
+        color: #4269CB;
+    }
+
+    th { text-align: left ; font-weight: 100; font-size: 18px; }
+    td { text-align: left ; }
+    table, th, td { border: 1px solid white; border-collapse: collapse; }
+  

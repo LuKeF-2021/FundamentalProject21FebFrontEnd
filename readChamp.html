@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>League Champion Database - Read Champion</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="containerNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Add Champion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="updateChamp.html">Update Champion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deleteChamp.html">Delete Champion</a>
+                </li>
+                <li class="nav-item-">
+                    <a class="nav-link" href="readChamp.html">Read Champions</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <h1> Read Champion </h1>
+    <div class="container">
+        <form>
+
+            <h2>Champion Details</h2>
+            <label for="champIdBox">Champion ID:</label>
+            <input type="text" id="champIdBox" name="champIdBox" placeholder="Champion ID...">
+            <label for="champNameBox">Champion Name:</label>
+            <input type="text" id="champNameBox" name="champNameBox" placeholder="Champion name...">
+            <br>
+            <label for="Champ Cost">Champion Cost: &nbsp;</label>
+            <select id="Champion Cost" name="Champion Cost">
+                <option value="450">450</option>
+                <option value="1350">1350</option>
+                <option value="3150">3150</option>
+                <option value="4800">4800</option>
+                <option value="6300">6300</option>
+                <option value="7800">7800</option>
+            </select>
+            <br>
+            <label for="Champ Class">Champion Class:</label>
+            <select id="Champion Class" name="Champion Class">
+                <option value="marksman">Marksman</option>
+                <option value="mage">Mage</option>
+                <option value="ap fighter">AP Fighter</option>
+                <option value="ap assassin">AP Assassin</option>
+                <option value="ad fighter">AD Fighter</option>
+                <option value="ad assassin">AD Assassin</option>
+                <option value="tank">Tank</option>
+                <option value="enchanter">Enchanter</option>
+            </select>
+            <br>
+            <label>Champion Role(s) Played:</label>
+            <input type="checkbox" name="CheckTop" value="Yes" />Top
+            <input type="checkbox" name="CheckJungle" value="Yes" />Jungle
+            <input type="checkbox" name="CheckMid" value="Yes" />Mid
+            <input type="checkbox" name="CheckADC" value="Yes" />ADC
+            <input type="checkbox" name="CheckSupport" value="Yes" />Support
+            <br>
+            <label>Champion Release Year:</label>
+            <input type="text" name="ChampReleaseYear" />
+            <br>
+            <label>I own this Champion:</label>
+            <input type="checkbox" name="ChampOwned" value="Yes" />Owned
+            <br>
+
+            </fieldset>
+        </form>
+    </div>
+    <div class="btn-group">
+        <button class="btn" id="show-all">Show All</button>
+        <button class="btn" id="show-allCost">Show Champs Of Cost</button>
+        <button class="btn" id="show-allClass">Show Champs Of Class</button>  
+        <button class="btn" id="show-allCostClass">Show Champs Of Cost + Class</button> 
+        <button class="btn" id="show-champId">Show Champ With ID</button>
+    </div>
+    <br>
+    <table class="champ-output" style="width: 100%;" id="champ-table">
+        <tr>
+            <th>Champ Name</th>
+            <th>Champ Cost</th>
+            <th>Champ Class</th>
+            <th>Champ Roles</th>
+            <th>Champ Release Year</th>
+            <th>Champ Owned</th>
+            <th>Champ On Sale</th>
+        </tr>
+
+    </table>
+    <script src="readChamp.js"></script>
+
+</body>
+
+</html>
